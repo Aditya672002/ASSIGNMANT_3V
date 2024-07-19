@@ -1,0 +1,90 @@
+# Vehicle Rental Agency
+
+This is a C# console application that simulates a vehicle rental agency. It manages a fleet of vehicles, including cars, trucks, and motorcycles, and allows renting these vehicles while keeping track of the total revenue.
+
+ Features
+
+- Vehicle Management: Add and remove vehicles from the fleet.
+- Vehicle Types: Manage different types of vehicles such as Cars, Trucks, and Motorcycles.
+- Renting Vehicles: Rent vehicles and update the total revenue.
+- Display Fleet: Display the details of all vehicles currently in the fleet.
+
+ Classes
+
+ Vehicle
+
+Represents a general vehicle with properties such as Model, Manufacturer, Year, and RentalPrice. This class is intended to be a base class for specific types of vehicles.
+
+- Properties:
+  - Model
+  - Manufacturer
+  - Year
+  - RentalPrice
+
+- Methods:
+  - Constructor: Initializes the vehicle with provided details.
+  - DisplayDetails: Displays the vehicle's details.
+
+ Car
+
+Inherits from the Vehicle class and represents a car with additional properties such as Seats, EngineType, Transmission, and Convertible.
+
+- Properties:
+  - Seats
+  - EngineType
+  - Transmission
+  - Convertible
+
+- Methods:
+  - Constructor: Initializes the car with provided details.
+  - DisplayDetails: Displays the car's details including those inherited from the Vehicle class.
+
+Truck
+
+Inherits from the Vehicle class and represents a truck with additional properties such as Capacity, TruckType, and FourWheelDrive.
+
+- Properties:
+  - Capacity
+  - TruckType
+  - FourWheelDrive
+
+- Methods:
+  - Constructor: Initializes the truck with provided details.
+  - DisplayDetails: Displays the truck's details including those inherited from the Vehicle class.
+
+ Motorcycle
+
+Inherits from the Vehicle class and represents a motorcycle with additional properties such as EngineCapacity, FuelType, and HasFairing.
+
+- Properties:
+  - EngineCapacity
+  - FuelType
+  - HasFairing
+
+- Methods:
+  - Constructor: Initializes the motorcycle with provided details.
+  - DisplayDetails: Displays the motorcycle's details including those inherited from the Vehicle class.
+
+RentalAgency
+
+Manages a fleet of vehicles and tracks the total revenue from rentals.
+
+- Properties:
+  - Fleet: A list of vehicles.
+  - TotalRevenue: The total revenue from rented vehicles.
+
+- Methods:
+  - Constructor: Initializes the rental agency.
+  - AddVehicle: Adds a vehicle to the fleet.
+  - RemoveVehicle: Removes a vehicle from the fleet.
+  - RentVehicle: Rents a vehicle from the fleet and updates the total revenue.
+  - DisplayFleet: Displays the details of all vehicles currently in the fleet.
+
+ How to Use
+
+1. Initialize the rental agency: Create an instance of the RentalAgency class.
+2. Add vehicles to the fleet: Use the AddVehicle method to add instances of Car, Truck, or Motorcycle to the fleet.
+3. Display the fleet: Use the DisplayFleet method to show details of all vehicles in the fleet.
+4. Rent a vehicle: Use the RentVehicle method to rent a vehicle from the fleet and update the total revenue.
+5. Display the updated fleet: Use the DisplayFleet method again to show the updated fleet after a vehicle is rented.
+
